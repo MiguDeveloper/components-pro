@@ -7,6 +7,10 @@ import { TimerComponent } from './components/timer/timer.component';
 import { DisplayComponent } from './components/display/display.component';
 import { TestEnumsComponent } from './testing/test-enums/test-enums.component';
 import { ContadorComponent } from './components/contador/contador.component';
+import { TestNgContentComponent } from './testing/test-ng-content/test-ng-content.component';
+import { MensajeComponent } from './testing/test-ng-content/mensaje/mensaje.component';
+import { TestObservablesComponent } from './testing/test-observables/test-observables.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,13 +18,13 @@ import { ContadorComponent } from './components/contador/contador.component';
     TimerComponent,
     DisplayComponent,
     TestEnumsComponent,
-    ContadorComponent
+    ContadorComponent,
+    TestNgContentComponent,
+    MensajeComponent,
+    TestObservablesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
