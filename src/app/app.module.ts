@@ -11,6 +11,9 @@ import { TestNgContentComponent } from './testing/test-ng-content/test-ng-conten
 import { MensajeComponent } from './testing/test-ng-content/mensaje/mensaje.component';
 import { TestObservablesComponent } from './testing/test-observables/test-observables.component';
 import { FormsModule } from '@angular/forms';
+import { BehaviorsubjectComponent } from './testing/behaviorsubject/behaviorsubject.component';
+import { TiempoComponent } from './testing/behaviorsubject/tiempo/tiempo.component';
+import { LabelComponent } from './testing/behaviorsubject/label/label.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { FormsModule } from '@angular/forms';
     TestNgContentComponent,
     MensajeComponent,
     TestObservablesComponent,
+    BehaviorsubjectComponent,
+    TiempoComponent,
+    LabelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

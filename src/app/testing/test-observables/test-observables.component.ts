@@ -20,7 +20,10 @@ export class TestObservablesComponent implements OnInit {
   ngOnInit(): void {
     this.titleService.setTitle('example::observables');
     this.users$ = this.refreshUsers$.pipe(
-      switchMap((_) => this.apiService.getUsers())
+      switchMap((_) => {
+        console.log('rpta', _);
+        return this.apiService.getUsers();
+      })
     );
     //this.refreshUsers$.subscribe((resp) => console.log(resp));
   }
