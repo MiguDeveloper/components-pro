@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { BehaviorsubjectComponent } from './testing/behaviorsubject/behaviorsubject.component';
 import { TiempoComponent } from './testing/behaviorsubject/tiempo/tiempo.component';
 import { LabelComponent } from './testing/behaviorsubject/label/label.component';
+import { SubjectVsBehaviorsubjectComponent } from './testing/subject-vs-behaviorsubject/subject-vs-behaviorsubject.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LabelComponent } from './testing/behaviorsubject/label/label.component'
     BehaviorsubjectComponent,
     TiempoComponent,
     LabelComponent,
+    SubjectVsBehaviorsubjectComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContadorComponent } from './components/contador/contador.component';
 import { BehaviorsubjectComponent } from './testing/behaviorsubject/behaviorsubject.component';
+import { SubjectVsBehaviorsubjectComponent } from './testing/subject-vs-behaviorsubject/subject-vs-behaviorsubject.component';
 
 const routes: Routes = [
   { path: 'enums-example', component: TestEnumsComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'ng-content-example', component: TestNgContentComponent },
   { path: 'test-observable', component: TestObservablesComponent },
   { path: 'test-timer', component: BehaviorsubjectComponent },
+  { path: 'sub-vs-beha', component: SubjectVsBehaviorsubjectComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'enums-example' },
 ];
 
